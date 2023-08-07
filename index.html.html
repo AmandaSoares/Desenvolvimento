@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento 15 </title>
+</head>
+<body>
+    <script>
+    let saida = false
+    let nomeCompleto = window.prompt('Nome: ')
+
+    do {
+        let anoNascimento = parseInt(window.prompt('Ano de Nascimento: '))
+        
+        if (anoNascimento >= 1922 && anoNascimento <= 2021 && typeof anoNascimento == 'number') {
+            let idade = 2022 - anoNascimento
+            window.alert("Olá, " + nomeCompleto + " você tem " + idade + " anos!") 
+
+            saida = true
+        }
+        else {
+            window.alert('O ano deve estar entre 1922 e 2021!')
+        }
+    }
+        while (saida == false) 
+    </script>
+</body>
+</html>
